@@ -29,16 +29,20 @@ footer {
 .important:hover {
        background-color: yellow;
 }
+
 img {
   border-style: double;
   border-color: red;
   border-width: 5px;
   width:25%;
-
 }
+
 ul.nobull {
   list-style-type: none;
+
+
 }
+
 ul li.newbull:before {
   content: '';
   display: inline-block;
@@ -56,6 +60,7 @@ ul li.brkbull:before {
   	float: left;
   	width: 1.4em;
   }
+
 
 h2.blinking {
   animation: blinker 1s linear infinite;
@@ -77,8 +82,25 @@ h2.blinking {
   height: 100px;
   display: flex;
   flex-direction: column;
+
 }
 
+section ul li:nth-child(odd) {color: blue;}
+
+.fade {
+  transition: margin-right 2s, color 4s;
+}
+
+a:hover {
+    color: inherit;
+    font-size: 2em;
+}
+a {
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
 .Rainbow {
   font-family: 'Over the Rainbow', cursive;
 }
