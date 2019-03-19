@@ -5,15 +5,23 @@
     <title>portfolio-about-me</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+    <style>
+    .sr-only {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    </style>
   </head>
 <body>
      <header>
         <h1>About Me</h1>
         <nav>
           <a href="index.html">Home</a>
-          <br>
           <a href="about-me.html">About Me</a>
-          <br>
           <a href="contact-form.html">Contact Me</a>
         </nav>
     </header>
@@ -25,7 +33,8 @@
         <h3><u>Dijon's previous Projects:</u></h3>
           <nav>
             <ul class="nobull">
-              <li class="newbull important"><a href="https://github.com/DijonStamos/semantic-elements-">Semantic Elements</a></li>
+              <li class="newbull important"><span class="sr-only">this link opens in
+                a new tab</span><a href="https://github.com/DijonStamos/semantic-elements-" target=":_blank">Semantic Elements</a></li>
               <li class="newbull important"><a href="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg">CSS</a></li>
               <li class="newbull important"><a href="https://c1.staticflickr.com/4/3701/19224697601_6b600f21eb.jpg">Javascript</a></li>
             </ul>
